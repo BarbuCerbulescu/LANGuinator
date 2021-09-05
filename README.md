@@ -20,6 +20,8 @@
   
 <p>When a user encrypts/decrypts a message in/from a language, he will gain a number of xp points equal to the length of the message. The ammount of xp points that the user has is used to determine his fluency for that language </p>
 
+<p> A user can see the fluency level he has in each language, as well as the xp points necessary to level-up, by using the <code>!lang send_my_xp_status<\code> command.</p>
+
 
 ### Notes on cypher initialization:
 <p>The matrices used for the Hill cyphers will be either 2x2, 3x3 or 4x4.</p>
