@@ -15,8 +15,10 @@
 <p>If you administer a server with LANGuinator in it, all you need to do is use the <code>!lang create_language (language_name) (cypher_type)</code> command, where <code>(language_name)</code> is the name of the language you wish to create and <code>(cypher_type)</code> specifies the type of cypher the new language will have ( should be either 'affine', 'Hill' or 'Vigenere' ). The <code>cypher_type</code> parameter is optional and will be treated as 'affine' by default. A randomly-initialized cypher of the given type will be used for the newly created language ( see the notes below ). </p> 
 <p>This command also creates a number of roles associated with that language equal to the number of levels of fluency. These roles will be used to determine how well a server member knows the language.</p>
 
-###
-
+### Levels of fluency
+<p> There are three levels of fluency: begginer, intermediate and advanced. As of right now, these levels serve no real purpose but in the future they should affect the accuracy of message encryption/decryption for the given language.</p>
+  
+<p>When a user encrypts/decrypts a message in/from a language, he will gain a number of xp points equal to the length of the message. The ammount of xp points that the user has is used to determine his fluency for that language </p>
 
 
 ### Notes on cypher initialization:
