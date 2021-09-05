@@ -13,6 +13,7 @@
 <p>LANGuinator possesses an experience-based system, where users become more ’fluent’ in a language the more messages they encrypt/decrypt in/from that particular language.</p> 
 
 ### How to create a language:
-If you have LANGuinator as a member in your server, all you need to do is use the ```!lang create_language (language_name) (cypher_type)``` command, where (language_name) is the name of the language you wish to create and (cypher_type) specifies the type of cypher the new language will have ( should be either 'affine', 'Hill' or 'Vigenere' ). In addition, this command creates a number of roles equal to the number of levels of fluency.
+<p>If you administer a server with LANGuinator in it, all you need to do is use the ```!lang create_language (language_name) (cypher_type)``` command, where ```(language_name)``` is the name of the language you wish to create and ```(cypher_type)``` specifies the type of cypher the new language will have ( should be either ```'affine'```, ```'Hill'``` or ```'Vigenere'``` ). The ```cypher_type``` parameter is optional and will be treated as ```'affine'``` by default.</p> 
+In addition, this command creates a number of roles equal to the number of levels of fluency.
 
 
