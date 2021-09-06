@@ -16,6 +16,11 @@
 
 <p>This command also creates a number of roles associated with that language equal to the number of levels of fluency. These roles will be used to determine how well a server member knows the language.</p>
 
+ **Languages name are unique and serve as identifiers for the language within the server** 
+
+### Encrypting/ decrypting messages
+<p> To encrypt a message you can use the '<code>!lang encrypt (message) (language_name)</code>, where <code>(message)</code> is the message to be encrypted and <code>(language_name)</code> is the name of the language you wish to encrypt the message in. The bot will immediatly delete the message calling the <code>encrypt</code> command and post the encrypted message (along with the name of language) on the same channel </p>
+
 ### Levels of fluency
 <p> There are three levels of fluency: begginer, intermediate and advanced. As of right now, these levels serve no real purpose but in the future they should affect the accuracy of message encryption/decryption for the given language.</p>
   
