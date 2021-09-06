@@ -13,6 +13,7 @@
 
 ### How to create a language:
 <p>If you administer a server with LANGuinator in it, all you need to do is use the <code>!lang create_language (language_name) (cypher_type)</code> command, where <code>(language_name)</code> is the name of the language you wish to create and <code>(cypher_type)</code> specifies the type of cypher the new language will have ( should be either 'affine', 'Hill' or 'Vigenere' ). The <code>cypher_type</code> parameter is optional and will be treated as 'affine' by default. A randomly-initialized cypher of the given type will be used for the newly created language ( see the notes below ). </p> 
+
 <p>This command also creates a number of roles associated with that language equal to the number of levels of fluency. These roles will be used to determine how well a server member knows the language.</p>
 
 ### Levels of fluency
@@ -22,6 +23,11 @@
 
 <p> A user can see the fluency level he has in each language, as well as the xp points necessary to level-up, by using the <code>!lang send_my_xp_status</code> command.</p>
 
+### How to import a language:
+<p>f you administer a server with LANGuinator in it, you can use the <code>!lang import_language (language_name) (guild_id)</code> command, where <code>(language_name)</code> is the name of the language you wish to import and <code>(guild_id)</code> is the name of the server you wish to import it from. In its current implementation, a language with the same name must be created before importing. Its cypher will then be overwritten if the import is approved.</p>
+  
+ <p>Upon using the command, a request will be sent to all non-bot adminstrators of the given server in the form of a private message. If one of the admins reacts with a <code>👍</code> emoji to the message, the request is considered approved and the language cypher will be imported. The admin may also deny the request by reacting with a <code>👎</code> to the same message. In either case, the bot will notify you of their decision.</p> 
+  
 
 ### Notes on cypher initialization:
 <p>The matrices used for the Hill cyphers will be either 2x2, 3x3 or 4x4.</p>
