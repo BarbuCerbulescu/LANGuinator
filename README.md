@@ -12,11 +12,11 @@
 <p>LANGuinator possesses an experience-based system, where users become more ’fluent’ in a language the more messages they encrypt/decrypt in/from that particular language.</p> 
 
 ### How to create a language:
-<p>If you administer a server with LANGuinator in it, all you need to do is use the <code>!lang create_language (language_name) (cypher_type)</code> command, where <code>(language_name)</code> is the name of the language you wish to create and <code>(cypher_type)</code> specifies the type of cypher the new language will have ( should be either 'affine', 'Hill' or 'Vigenere' ). The <code>cypher_type</code> parameter is optional and will be treated as 'affine' by default. A randomly-initialized cypher of the given type will be used for the newly created language ( see the notes below ). </p> 
+<p>If you administer a server with LANGuinator in it, all you need to do is use the <code>!lang create_language (language_name) (cypher_type)</code> command, where <code>(language_name)</code> is the name of the language you wish to create and <code>(cypher_type)</code> specifies the type of cypher the new language will have ( should be either 'affine', 'Hill' or 'Vigenere' ). The <code>cypher_type</code> parameter is optional and will be treated as 'affine' by default. A randomly-initialized cypher of the given type will be used for the newly created language ( see 'Notes on cypher initialization' ). </p> 
 
 <p>This command also creates a number of roles equal to the number of levels of fluency. These roles will be used to determine how well a server member knows the language.</p>
 
-**names serve as identifiers for languages within each server and must be unique** ( though languages from different servers can share names, as can be seen below ) .
+**Names serve as identifiers for languages within each server and must be unique** ( though languages from different servers can share names, as can be seen below ) .
 
 ### How to import a language:
 <p>f you administer a server with LANGuinator in it, you can use the <code>!lang import_language (language_name) (guild_id)</code> command, where <code>(language_name)</code> is the name of the language you wish to import and <code>(guild_id)</code> is the name of the server you wish to import it from. In its current implementation, a language with the same name must be created before importing. Its cypher will then be overwritten if the import is approved.</p>
@@ -26,7 +26,7 @@
 ### Encrypting/ decrypting messages
 <p> To encrypt a message you can use the '<code>!lang encrypt (message) (language_name)</code>, where <code>(message)</code> is the message to be encrypted and <code>(language_name)</code> is the name of the language you wish to encrypt the message in. The bot will immediatly delete the message calling the <code>encrypt</code> command and post the encrypted message ( along with the name of language used for encryption ) on the same channel as the calling message.</p>
 
-<p>To decrypt a message you can use the '<code>!lang decrypt (message) (language_name)</code>, where <code>(message)</code> is the message to be decrypted and <code>(language_name)</code> is the name of the language that the message was ( or is presumed to have been ) encrypted. The decrypted message will be sent privatelly to you.</p>
+<p>To decrypt a message you can use the '<code>!lang decrypt (message) (language_name)</code>, where <code>(message)</code> is the message to be decrypted and <code>(language_name)</code> is the name of the language that the message was ( or is presumed to have been ) encrypted. The decrypted message will be sent privately to you.</p>
 
 **Both encryption and decryption require you to 'know' that language.**
 
